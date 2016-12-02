@@ -1,0 +1,32 @@
+#Average monthly income
+print("Please enter your income for the following months:")
+income8 = float(input("August:"))
+income9 = float(input("September:"))
+income10 = float(input("October:"))
+income11 = float(input("November:"))
+income12 = float(input("December:"))
+
+ave_income = getAverageOfListOfNumbers([income8, income9, income10, income11, income12])
+
+print'Your average monthly income is', ave_income, 'dollar(s)'
+
+#Average monthly spending
+print("Please enter the total amount spent on FOOD for the following months:")
+food8 = float(input("August:"))
+food9 = float(input("September:"))
+food10 = float(input("October:"))
+food11 = float(input("November:"))
+food12 = float(input("December:"))
+ave_food_exp = getAverageOfListOfNumbers([food8, food9, food10, food11, food12])
+
+print("Please enter the total amount spent on RENT for the month(s) of:")
+rent8 = float(input("August:"))
+rent9 = float(input("September:"))
+rent10 = float(input("October:"))
+rent11 = float(input("November:"))
+rent12 = float(input("December:"))
+ave_rent = getAverageOfListOfNumbers([rent8, rent9, rent10, rent11, rent12])
+
+print 'Your monthly expenses seem to cost you an average of', ave_exp, 'dollar(s)'
+
+print 'Your average monthly gain/loss is', ave_income-ave_exp, 'dollar(s)'
